@@ -17,7 +17,8 @@
     .scene {
       position: relative;
       width: min(540px, 92vw);
-      height: 420px;
+      aspect-ratio: 4 / 3;
+      height: auto;
       perspective: 1200px;
     }
     .envelope {
@@ -105,8 +106,14 @@
       color: #d63384;
       text-decoration: underline;
     }
+    .dress {
+      text-align: center;
+      margin-top: 12px;
+      color: #a05279;
+      font-weight: 500;
+    }
     .open .flap { transform: rotateX(180deg); }
-    .open .card { transform: translateY(20%); opacity: 1; pointer-events: auto; z-index: 5; }
+    .open .card { transform: translateY(0); opacity: 1; pointer-events: auto; z-index: 5; }
   </style>
 </head>
 <body>
@@ -125,7 +132,10 @@
       </div>
       <p style="text-align:center;">Приглашаем тебя на твой особенный праздник 💃✨</p>
       <p style="text-align:center;"><strong>22.08.2025 в 18:00</strong></p>
-      <p style="text-align:center;">Место встречи: <strong><a href="https://yandex.ru/maps/-/CDq~pZfL" target="_blank">метро Сухаревская</a></strong></p>
+      <p style="text-align:center;">
+        Место встречи: <strong><a href="https://yandex.com/maps/213/moscow/stops/station__9858914/?ll=37.632306%2C55.772496&tab=overview&z=16" target="_blank">метро Сухаревская</a></strong>
+      </p>
+      <p class="dress">Дресс-код: <strong>красиво и удобно</strong></p>
       <button class="cta" id="cta">Я приду 💖</button>
       <div class="note">Ждём тебя с хорошим настроением!</div>
     </section>
